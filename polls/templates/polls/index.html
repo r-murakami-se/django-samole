@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Polls{% endblock %}
+
+{% block content %}
+    {% if latest_question_list %}
+    <ul>
+        {% for question in latest_question_list %}
+        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No polls are available.</p>
+    {% endif %}
+
+    <div class="text-3xl font-bold underline" x-data="{ username: 'mura' }">
+        Username: <strong x-text="username"></strong>
+    </div>
+
+    <button type="button" class="bg-red-200 border p-5 rounded ">test1234</button>
+{% endblock %}

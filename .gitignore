@@ -1,0 +1,15 @@
+node_modules
+**/__pycache__
+*.sqlite3
+frontend/dist
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
